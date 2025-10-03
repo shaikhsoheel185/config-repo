@@ -1,0 +1,12 @@
+# Common PROD environment config
+
+logging:
+  level:
+    root: WARN  # Less verbose in production
+    org.springframework: WARN
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info  # Limit exposed endpoints in prod
