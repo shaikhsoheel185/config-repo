@@ -1,0 +1,11 @@
+# Common DEV environment config
+
+logging:
+  level:
+    root: DEBUG  # More verbose logging in dev
+    org.springframework: DEBUG
+
+spring:
+  h2:
+    console:
+      enabled: true  # Enable H2 console for all services in dev
