@@ -1,0 +1,20 @@
+# Common configuration applied to all microservices
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics  # Actuator endpoints
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+
+spring:
+  jackson:
+    serialization:
+      indent-output: true  # Pretty JSON responses
